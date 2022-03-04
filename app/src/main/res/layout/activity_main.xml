@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/InputTextBox"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="43dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_baseline_arrow"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="300dp"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/InGroupe"
+        android:layout_width="109dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/inSixten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16-ая" />
+
+        <RadioButton
+            android:id="@+id/inTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="10-ая" />
+
+        <RadioButton
+            android:id="@+id/inEig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8-ая" />
+
+        <RadioButton
+            android:id="@+id/inThri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3-ая" />
+
+        <RadioButton
+            android:id="@+id/inTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2-ая" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/OutGroupe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/outSixten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16-ая" />
+
+        <RadioButton
+            android:id="@+id/outTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10-ая" />
+
+        <RadioButton
+            android:id="@+id/outEig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8-ая" />
+
+        <RadioButton
+            android:id="@+id/outThri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3-ая" />
+
+        <RadioButton
+            android:id="@+id/outTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="2-ая" />
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
